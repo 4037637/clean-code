@@ -5,46 +5,58 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .start-block {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .start-block .start-img {
   width: 100%;
 }
+
 .start-block .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.start-block { text-align: center;
+
+  .start-block { text-align: center;
+  }
+
 }
-}
+
 .main-elem {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-row-wrap {
   display: flex;
 }
+
 ul {
   margin:0;
   padding: 0px;
 }
+
 li, h3 {
   list-style:none;
 }
+
 input, button{
   outline:none;
 }
+
 .todo-btn {
   background: none;
   border: 0px;
@@ -54,6 +66,7 @@ input, button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .todo-btn:hover {
   color: #3a3a3a;
 }
@@ -82,6 +95,7 @@ input, button{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .todo-input-text:focus {
   color: #333;
 }
@@ -92,6 +106,7 @@ input, button{
   display: block;
   margin: 0 0 20px;
 }
+
 .todo-input#new-task {
   width: 318px;
 }
@@ -110,12 +125,14 @@ input, button{
 .todo-input-checkbox {
   margin: 0 10px;
 }
+
 .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .delete_img {
   height: 2em;
   transform: rotateZ(45deg);
