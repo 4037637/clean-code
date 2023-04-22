@@ -6,30 +6,30 @@
   font-family: Lato, sans-serif;
 }
 
-.start-block {
+.start {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.start-block .start-img {
+.start__img {
   width: 100%;
 }
 
-.start-block .more-info {
+.start__more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .start-block {
+  .start {
     text-align: center;
   }
 
 }
 
-.main-elem {
+.main-section {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -41,8 +41,35 @@
   flex-grow: 1;
 }
 
-.task-row-wrap {
+.main-section__add-wrap {
   display: flex;
+}
+
+.add-wrap__input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.add-wrap__btn {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.add-wrap__btn:hover {
+  color: #3a3a3a;
 }
 
 ul {
@@ -60,7 +87,7 @@ button{
   outline: none;
 }
 
-.todo-btn {
+.todo-item__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -70,13 +97,13 @@ button{
   cursor: pointer;
 }
 
-.todo-btn:hover {
+.todo-item__btn:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 
-.add-elem {
+.main-section__add-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +114,7 @@ button{
   cursor: default;
 }
 
-.todo-input-text {
+.todo-item__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -106,18 +133,18 @@ button{
 
 /* New Task */
 
-.add-elem {
+.main-section__add-title {
   display: block;
   margin: 0 0 20px;
 }
 
-.todo-input#new-task {
+.todo-input#add-elem {
   width: 318px;
 }
 
 /* Task list */
 
-.todo-item {
+.todo-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -126,7 +153,7 @@ button{
   align-items: center;
 }
 
-.todo-input-checkbox {
+.todo-item__checkbox {
   margin: 0 10px;
 }
 
@@ -137,12 +164,12 @@ button{
   width: 226px;
 }
 
-.delete_img {
+.todo-btn__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete_img:hover {
+.todo-btn__img:hover {
   transform: rotateZ(0);
 }
 
@@ -153,20 +180,11 @@ button{
 }
 
 /* Edit Task */
-.todo-item > .todo-input-text {
+.todo-list__item > .todo-item__text {
   display: none;
-}
-
-.todo-item > .todo-input-text {
-  display: none;
-}
-
-.edit-mode > .todo-input-text {
-  display: inline-block;
-  width: 224px;
 }
   
-.edit-mode > .todo-input-text {
+.edit-mode > .todo-item__text {
   display: inline-block;
   width: 224px;
 }
